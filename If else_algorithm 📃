@@ -1,212 +1,208 @@
      #SHART APERATORIGA OID MASALALAR  
-#masala-1       
-# son = int(input('xoxlahan musnat yo manfiy son kiriting:  '))
-# if son > 0:
-#     print(son+1)
-# else:
-#     print(son)  
+#if-1
+son = int(input("son musbat bo'lsa 1 ga oshiriladi: "))
+if son > 0:
+    print(son+1)
+else:
+    print(son)          
 
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#----------------------------------------------------------------------
 
-#masala-2   
-# son = int(input('xoxlahan musnat yo manfiy son kiriting:  '))
-# if son > 0:
-#     print(son+1)
-# else:
-#     print(son-2)    
+#if-2
+son = int(input("son musbat bo'lsa 1 ga oshirilsin aks holda 2 ga kamaytirilsin: "))
+if son > 0:
+    print(son+1)
+else:
+    print(son-2) 
+
+#----------------------------------------------------------------------  
  
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#if-3
+son = int(input("son musbat bulsa 1 ga oshirilsin, manfiy bulsa 2 ga kamaytir, 0 ga teng bulsa 10 ni uzlashtirsin"))
+if son > 0:
+    print(son+1)
+elif son == 0:
+    print(10)
+else:
+    print(son-2)   
 
-#masala-3   
-# son = int(input('xoxlahan musnat yo manfiy son kiriting:  '))
-# if son > 0:
-#     print(son+1)
-# elif son == 0:
-#     print(10)
-# else:
-#     print(son-2)    
+#----------------------------------------------------------------------  
 
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- 
-#masala-4
-# musbat = 0
-# manfiy = 0
-# rezult = map(int,input('xoxlahan musnat yo manfiy 3ta son kiriting:  ').split())
+#if-4
+musbat = 0
+rezult = map(int,input('xoxlahan musnat yo manfiy 3ta son kiriting:  ').split())
+for raqam in rezult:
+    if raqam > 0:
+        musbat += 1     
+print(f'{musbat} ta musbat son')
 
-# for raqam in rezult:
-#     if raqam > 0:
-#         musbat += 1
-#     else:
-#         manfiy +=1
-        
-# print(f'{musbat} ta musbat son')
-# print(f'{manfiy} ta manfiy son')
+#----------------------------------------------------------------------  
 
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#if-5
+musbat = 0
+manfiy = 0
+rezult = map(int,input('xoxlahan musnat yo manfiy 3ta son kiriting:  ').split())
+for raqam in rezult:
+    if raqam > 0:
+        musbat += 1
+    else:
+        manfiy +=1
+print(f'{musbat} ta musbat son')
+print(f'{manfiy} ta manfiy son')
 
-#masala-6
-# son = map(int,input('istalgan son kiriting:  ').split())
-# print(max(son))
+#----------------------------------------------------------------------  
 
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#if-6
+son = map(int,input("sonni kattasini aniqlaymiz").split())
+print(max(son))
 
-#masala-7
-# a = [1,2,8768,-9,767]
-# print(a.index(1))
+#---------------------------------------------------------------------- 
 
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#if-7
+a = list(map(int,input("sonnig kichigini tartib raqamini aniqlaymiz: ").split()))
+print(a.index(min(a))+1)
 
-#masala-8
-# print('katta kichigini tekshirib berish'.upper())
-# son1,son2 = map(int,input('2 ta son kiritig:  ').split())
-# if son1 > son2:
-#     print(f'katta son {son1}')
-# else:
-#     print(f'katta son {son2}')
+#---------------------------------------------------------------------- 
 
-# if son1 < son2:
-#     print(f'kichik son {son1}')
-# else:
-#     print(f'kichik son {son2}')
+#if-8
+a=list(map(int,input().split()))
+print(max(a),min(a))
 
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#---------------------------------------------------------------------- 
 
-#masala-9
-# a,b = map(int,input('A B son kiritig:  ').split())
-# if a < b:
-#     print(a+b)
-# elif a==b :
-#     print('A va B teng')
-# else:
-#     print('A katta B dan')
+# #if-9
+a,b=map(int,input().split())
+b *=a 
+print(a,b)
 
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#---------------------------------------------------------------------- 
 
-#masala-10
-#a,b = map(int,input('A B son kiritig:  ').split())
-# if a == b:
-#     print(0)
-# else:
-#     print(a+b)
-# print(a,b)
+# #if-10
+a,b = map(int, input().split())
+if a != b:
+    print(a+b)
+if a == b:
+    print(0)
 
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#---------------------------------------------------------------------- 
 
-#masla-11
-#a,b = map(int,input('A B son kiritig:  ').split())
-# if a == b:
-#     print(0)
-# elif a>b:
-#     print(a)
-# else:
-#     print(b)
+# #if-11
+a,b = map(int, input().split())
+if a > b:
+    x =a
+elif a < b :
+    x = b
+else:
+    x =0
+print(x)
 
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#---------------------------------------------------------------------- 
 
-#masala-12
-# son1,son2,son3 = map(int,input('3ta son kiriting:  ').split())
-# if son1 and son2 > son3:
-#     print(son3)
-# elif  son3 and son1 > son2:
-#     print(son2)
-# else:
-#     print(son1)
+# #if-12
+a,b,c = map(int, input().split())
+if a > b and c > b:
+    x =b
+elif a > c and b > c:
+    x =c
+else:
+    x =a
+print(x)
+
+#---------------------------------------------------------------------- 
+
+# #if-13
+a,b,c = map(int, input().split())
+if a > b and c > b:
+    x =b
+elif a > c and b > c:
+    x =c
+else:
+    x =a
+print(x)
+
+#---------------------------------------------------------------------- 
+
+# #if-14
+a,b,c = map(int,input('3 ta son kiritig:  ').split())
+if a < b and a < c:
+    print(a)
+if b < a and b < c:
+    print(b)
+if c < b and c < a:
+    print(c)
+if a > b and a > c:
+    print(a)
+if b > a and b > c:
+    print(b)
+if c > b and c > a:
+    print(c)
+
+#---------------------------------------------------------------------- 
+
+# #if-15
+a,b,c = map(int,input('3 ta son kiritig:  ').split())
+if a > b and a > c:
+    print(a+b,a+c)
+if b > a and b > c:
+    print(b+a,b+c)
+if c > b and c > a:
+    print(c+a,c+b)
+
+#---------------------------------------------------------------------- 
+
+# #if-16
+a,b,c = map(int,input('3 ta son kiritig:  ').split())
+print(f"{a,b,c} sonlar berilgan agar tartiblangan bo`lsa ikkilantiriladi aks holda 2 qoshiladi")
+if a < b < c :
+    print(a*2,b*2,c*2)
+else:
+    print(a+2,b+2,c+2)   
+
+#---------------------------------------------------------------------- 
+
+# #if-17
+a,b,c = map(int,input('3 ta son kiritig:  ').split())
+print(f"{a,b,c} sonlar berilgan agar tartiblangan bo`lsa ikkilantiriladi aks holda 2 qoshiladi")
+if a < b < c or a > b > c:
+    print(a*2,b*2,c*2)
+else:
+    print(a+2,b+2,c+2)  
+
+#---------------------------------------------------------------------- 
+
+# #if-18
+a,b,c= map(int,input('son kiriting 3 ta 2 ta si birxil bo`lsin 1 ta bir xil bolmagan sonni indexini topaman: \n').split())
+if a != b and a !=c:
+    print(1)
+if b != a and b !=c:
+    print(2)
+if c != a and c !=b:
+    print(3)
+
+#---------------------------------------------------------------------- 
+
+# #if-19
+a,b,c,d= map(int,input('4 ta  son kiriting 3 ta si birxil bo`lsin 1 ta bir xil bolmagan sonni indexini topaman: \n').split())
+g = a,b,c,d
+g = list(g)
+if a != b and a !=c and a!=d:
+    print(1)
+if b != a and b !=c and b != d:
+    print(2)
+if c != a and c !=b and c != d: 
+    print(3)
+if d != a and d !=b and d != c: 
+    print(4) 
+
+#---------------------------------------------------------------------- 
+
+# #if-20
+a,b,c = map(int,input('a katta son bolsin b c son kiriting a yaqin bo`lgan son va ualr orasidagi masofani topaman \n ').split())
+if b-a < c-a:
+    print(f"a ga yaqin son {b} va ualr orasidagi masofa {b-a}")
+if b-a > c-a:
+    print(f"a ga yaqin son {c} va ualr orasidagi masofa {c-a}")
     
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-#masala-13
-# son1,son2,son3 = map(int,input('3ta son kiriting:  ').split())
-# if son1 < son2 < son3 or son1 > son2 > son3:
-#     son = son2
-# if  son1 < son3 < son2 or son1 > son3 > son2:
-#     son = son3
-# if  son2 < son1 < son3 or son2 > son1 > son3:
-#     son = son1
-# print(son1,son2,son3 ,'bu sonlar o`rtasi',son)
-
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-#masala-14
-# a,b,c = map(int,input('3 ta son kiritig:  ').split())
-# if a < b and a < c:
-#     print(a)
-# if b < a and b < c:
-#     print(b)
-# if c < b and c < a:
-#     print(c)
-# if a > b and a > c:
-#     print(a)
-# if b > a and b > c:
-#     print(b)
-# if c > b and c > a:
-#     print(c)
-
-
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-#masala-15
-# a,b,c = 28,29,17
-# if a > b and a > c:
-#     print(a+b,a+c)
-# if b > a and b > c:
-#     print(b+a,b+c)
-# if c > b and c > a:
-#     print(c+a,c+b)
-
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-#masala-16
-# a,b,c = 5,4,3
-# print(f"{a,b,c} sonlar berilgan agar tartiblangan bo`lsa ikkilantiriladi aks holda 2 qoshiladi")
-# if a+1 == b and b+1==c:
-#     print(a*2,b*2,c*2)
-# else:
-#     print(a+2,b+2,c+2)    
-
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-#masala-17
-# a,b,c = 5,4,3
-# print(f"{a,b,c} sonlar berilgan agar tartiblangan bo`lsa ikkilantiriladi aks holda 2 qoshiladi")
-# if a+1 == b and b+1==c or a-1==b and b-1==c:
-#     print(a*2,b*2,c*2)
-# else:
-#     print(a+2,b+2,c+2)  
-  
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-#masala-18
-# a,b,c= map(int,input('son kiriting 3 ta 2 ta si birxil bo`lsin 1 ta bir xil bolmagan sonni indexini topaman: \n').split())
-# g = a,b,c
-# g = list(g)
-# if a != b and a !=c:
-#     print(f'index {g.index(a)} bir xil emas')
-# if b != a and b !=c:
-#     print(f'index {g.index(b)} bir xil emas')
-# if c != a and c !=b:
-#     print(f'index {g.index(c)} bir xil emas')
-
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  
-#masala-19
-# a,b,c,d= map(int,input('4 ta  son kiriting 3 ta si birxil bo`lsin 1 ta bir xil bolmagan sonni indexini topaman: \n').split())
-# g = a,b,c,d
-# g = list(g)
-# if a != b and a !=c and a!=d:
-#     print(f'index {g.index(a)} bir xil emas')
-# if b != a and b !=c and b != d:
-#     print(f'index {g.index(b)} bir xil emas')
-# if c != a and c !=b and c != d: 
-#     print(f'index {g.index(c)} bir xil emas')
-# if d != a and d !=b and d != c: 
-#     print(f'index {g.index(d)} bir xil emas')    
-
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-#masala-20
-# a,b,c = map(int,input('a katta son bolsin b c son kiriting a yaqin bo`lgan son va ualr orasidagi masofani topaman \n ').split())
-# if a-b > a-c:
-#     print(f"a ga yaqin son {c} va ualr orasidagi masofa {a-c}")
-# if  a-b < a-c:
-#     print(f"a ga yaqin son {b} va ualr orasidagi masofa {a-b}")
     
-#~~~~
+    
+    
